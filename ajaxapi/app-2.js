@@ -26,26 +26,26 @@
 // -- cara baru request dari JS
 // -- mendukung promise
 
-const loadPeople = async () =>{
-try {
-    const response = await fetch('https://swapi.dev/api/people/1');
-    const data = await response.json();
-    console.log(data);
-    const response2 = await fetch('https://swap.dev/api/people/2');
-    const data2 = await response2.json();
-    console.log(data2);
-} catch (err) {
-    console.log('error :', err);
-}
+// const loadPeople = async () =>{
+// try {
+//     const response = await fetch('https://swapi.dev/api/people/1');
+//     const data = await response.json();
+//     console.log(data);
+//     const response2 = await fetch('https://swap.dev/api/people/2');
+//     const data2 = await response2.json();
+//     console.log(data2);
+// } catch (err) {
+//     console.log('error :', err);
+// }
 
-};
+// };
 
-loadPeople();
+// loadPeople();
 
 // --- req data dengan librari axios
 // -- link : https://axios-http.com/docs/intro
 
-axios.get('https://swap.dev/api/people/1').then((response) => {
+axios.get('https://swapi.dev/api/people/21').then((response) => {
     console.log('pakai axios :');
     console.log(response);
 }).catch((err)=> {

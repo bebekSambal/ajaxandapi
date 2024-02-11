@@ -41,3 +41,13 @@ try {
 };
 
 loadPeople();
+
+// --- req data dengan librari axios
+// -- link : https://axios-http.com/docs/intro
+
+axios.get('https://swap.dev/api/people/1').then((response) => {
+    console.log('pakai axios :');
+    console.log(response);
+}).catch((err)=> {
+    console.log(err)
+});

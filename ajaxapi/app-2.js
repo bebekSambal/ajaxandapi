@@ -45,9 +45,15 @@
 // --- req data dengan librari axios
 // -- link : https://axios-http.com/docs/intro
 
-axios.get('https://swapi.dev/api/people/21').then((response) => {
-    console.log('pakai axios :');
-    console.log(response);
-}).catch((err)=> {
-    console.log(err)
-});
+const getChart = async (id) => {
+
+    try {
+        const response = await axios.get(`https://swapi.dev/api/people/${id}`);
+        console.log(response.data);
+    } catch (error) {
+    console.log(error);
+    console.log(error.message);
+    console.log(error.response.status);
+    console.log(error.response.data) 
+    }
+};

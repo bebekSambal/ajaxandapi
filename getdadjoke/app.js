@@ -15,7 +15,8 @@ const getJokes = async () => {
 				Accept: 'application/json',
 			},
 		};
-		const res = await axios.get('https://icanhazdadjoke123123.com/', config);
+		const res = await axios.get('https://icanhazdadjoke.com/', config);
+		console.log(res, res.data.id);
 		return res.data.joke;
 	} catch (error) {
 		return 'No Jokes Available!';

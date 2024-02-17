@@ -1,6 +1,6 @@
 // let jsonContext = '{"nama": "john", "age": 30, "city": "new york"}';
 
-// let dataKu = JSON.h3arse(jsonContext);
+    // let dataKu = JSON.h3arse(jsonContext);
 
 // -- req via JS dg XMLHtth3Request
 
